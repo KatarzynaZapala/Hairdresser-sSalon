@@ -1,3 +1,5 @@
+/*font-family: 'Quicksand', sans-serif;*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +8,48 @@
 
 html {
     font-size: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
 
 body {
     font-size: 1.6rem;
+}
+
+header div {
+    width: 20%;
+    height: 200px;
+    background-color: darkgrey;
+    float: left;
+    margin: 2.5%;
+}
+
+header div:nth-child(3) {
+    background-image: url(../assets/musician-300x200.jpg);
+}
+
+header div:nth-child(2) {
+    background-image: url(../assets/upi%C4%99cie_300x200.jpg);
+}
+
+header div:nth-child(1) {
+    background-image: url(../assets/funny_man.jpg);
+}
+
+header div:nth-child(4) {
+    background-image: url(../assets/farbowanie_300x200.jpg);
+}
+
+
+
+nav {
+    background-color: black;
+    height: 50px;
 }
