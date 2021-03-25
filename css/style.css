@@ -31,23 +31,61 @@ header div {
     margin: 2.5%;
 }
 
-header div:nth-child(3) {
-    background-image: url(../assets/musician-300x200.jpg);
+header div:nth-child(1) {
+    background-image: url(../assets/funny_man.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header div:nth-child(1):hover {
+    background-image: url(../assets/loki_1280x827.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 
 header div:nth-child(2) {
     background-image: url(../assets/upi%C4%99cie_300x200.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-header div:nth-child(1) {
-    background-image: url(../assets/funny_man.jpg);
+header div:nth-child(2):hover {
+    background-image: url(../assets/woman-3170568_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header div:nth-child(3) {
+    background-image: url(../assets/musician-300x200.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header div:nth-child(3):hover {
+    background-image: url(../assets/%C5%82ysy.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 
 header div:nth-child(4) {
     background-image: url(../assets/farbowanie_300x200.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-
+header div:nth-child(4):hover {
+    background-image: url(../assets/person-hair-head-face-human-682832.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 nav {
     background-color: black;
