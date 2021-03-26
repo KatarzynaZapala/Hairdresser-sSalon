@@ -157,4 +157,24 @@ nav ul li:last-child a {
 
 nav ul li:last-child a:hover {
     background-color: transparent;
+    color: #89dee5;
+}
+
+
+footer {
+    background-color: #2c2b2b;
+    text-align: center;
+    margin-top: 1rem;
+    height: 6rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.6rem;
+    line-height: 6rem;
+}
+
+footer a:hover{
+    color: #ffcc89
 }
