@@ -9,6 +9,7 @@
 html {
     font-size: 10px;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*klasa clerfix będzie nadana wszystkim elementom, które mają wśród swoich dzieci floaty*/
@@ -28,11 +29,11 @@ body {
 /*header został podzielony na 4 równe części, każdy div na po 21%+4% (2 z prawej i 2 z lewej) */
 
 header div {
-    width: 21%;
+    width: 23%;
     height: 20rem;
     background-color: darkgrey;
     float: left;
-    margin: 2%;
+    margin: 1% 1%;
 }
 
 header div:nth-child(1) {
@@ -129,7 +130,7 @@ nav ul li a {
     text-align: center;
     letter-spacing: 1px;
     border: 2px solid white;
-    line-height: 6rem;
+    line-height: 4rem;
 }
 
 nav ul li a:hover {
@@ -165,7 +166,7 @@ nav ul li:last-child a:hover {
 
 
 .blog {
-    margin: 30px 200px;
+    margin: 40px 240px;
 }
 
 main {
@@ -184,7 +185,7 @@ article h1 {
 }
 
 article img {
-    width: 300px;
+    width: 230px;
     float: left;
     margin: 20px 20px 30px 0;
 }
@@ -196,13 +197,39 @@ article p {
 }
 
 aside {
-    width: 30%;
+    width: 25%;
     height: 100px;
     float: left;
 
     background-color: #dbdb9b;
+    margin-left: 5%;
+    margin-top: 40px;
 
 }
+
+.button {
+    width: 100vw;
+    text-align: left;
+    margin: 20px 0 20px 250px;
+}
+
+.button a {
+    display: block;
+    border: 1px solid #ef90bf;
+    width: 100px;
+    height: 40px;
+    background-color: deepskyblue;
+    /*    font-family: 'Quicksand',
+    sans-serif;*/
+    border-radius: 20px;
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    color: white;
+
+
+}
+
 
 footer {
     background-color: #2c2b2b;
