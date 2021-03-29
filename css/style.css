@@ -18,9 +18,7 @@ html {
     content: "";
     display: block;
     clear: both;
-
 }
-
 
 body {
     font-size: 1.6rem;
@@ -30,10 +28,10 @@ body {
 
 header div {
     width: 23%;
-    height: 20rem;
-    background-color: darkgrey;
-    float: left;
+    height: 25rem;
     margin: 1% 1%;
+    float: left;
+    background-color: darkgrey;
 }
 
 header div:nth-child(1) {
@@ -42,7 +40,6 @@ header div:nth-child(1) {
     background-position: center;
     background-size: cover;
     transition: .3s;
-
 }
 
 header div:nth-child(1):hover {
@@ -99,23 +96,22 @@ header div:nth-child(4):hover {
 }
 
 nav {
-    background-color: #2c2b2b;
+    margin-bottom: 1rem;
     padding-left: 3rem;
-    margin-bottom: 10px;
+    background-color: #2c2b2b;
 }
 
 nav ul {
+    max-width: 148rem;
+    margin: 0 auto;
     list-style: none;
-
 }
 
 nav ul li {
-    float: left;
     width: 17%;
-    /*20% nava (czyli okna przeglądarki) minus  rem*/
-    margin: 2rem 3rem;
-
-
+    /*17% nava (czyli okna przeglądarki) minus 3 rem*/
+    margin: 2.5rem 3rem;
+    float: left;
 }
 
 /*najlepiej większość styli nadać już samemu a*/
@@ -124,13 +120,14 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
     font-size: 1.8rem;
-    text-decoration: none;
+    line-height: 4rem;
     text-align: center;
     letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
     border: 2px solid white;
-    line-height: 4rem;
+    transition: .5s;
 }
 
 nav ul li a:hover {
@@ -138,111 +135,144 @@ nav ul li a:hover {
     color: #fadef8;
 }
 
-/* a w ostatnim li ulea*/
+/* a w ostatnim li ula*/
 
 nav ul li + li + li a {
     letter-spacing: 2px;
 }
 
 nav ul li:last-child {
+    margin-right: 10rem;
     float: right;
-    margin-right: 8rem;
 }
 
 nav ul li:last-child a {
-    color: #01cadb;
+    font-size: 3rem;
+    letter-spacing: 1.3rem;
     border: none;
     text-align: right;
-    font-size: 2.8rem;
-    letter-spacing: 1.3rem;
+    color: #01cadb;
+    transition: 1s;
+    cursor: context-menu;
 }
 
 nav ul li:last-child a:hover {
     background-color: transparent;
-    color: #89dee5;
+    color: #e07279;
+    cursor: context-menu;
 }
 
 /*jeżeli planujemy ustawiać elementy za pomocą floatów to najlepiej jeśli będą one miały swojego dodatkowego rodzica, który będzie służył do ustawienia klasy clearfix i wyczyszczenia floatów */
 
 
 .blog {
-    margin: 40px 240px;
+    max-width: 148rem;
+    margin: 4rem 24rem;
 }
 
 main {
     width: 70%;
+    padding-right: 3rem;
     float: left;
-    padding-right: 30px;
-
-    /*    background-color: pink;
-    */
 }
 
 article h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-size: 22px;
-    ;
 }
 
 article img {
-    width: 230px;
+    width: 27rem;
+    margin: 2rem 2rem 3rem 0;
     float: left;
-    margin: 20px 20px 30px 0;
 }
 
 article p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: justify;
 }
 
 aside {
-    width: 25%;
-    height: 100px;
+    width: 27%;
+    margin: 2rem 0 2rem 3%;
     float: left;
+}
 
-    background-color: #dbdb9b;
-    margin-left: 5%;
-    margin-top: 40px;
+.contact {
+    height: 20%;
+    margin-bottom: 5rem;
+    padding: 2.5rem;
+    background-color: #ded6b3;
+}
 
+.contact ul {
+    list-style: none;
+}
+
+.contact ul li a {
+    line-height: 2.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact ul li a i {
+    margin-right: 2rem;
+    margin-left: 3rem;
+    color: #333;
+}
+
+.title {
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.about {
+    height: 80%;
+    padding: 2.5rem;
+    text-align: justify;
+    background-color: #97cbd3;
+    overflow: hidden;
 }
 
 .button {
     width: 100vw;
+    margin: 2rem 0 4rem 25rem;
     text-align: left;
-    margin: 20px 0 20px 250px;
 }
+
 
 .button a {
     display: block;
-    border: 1px solid #ef90bf;
-    width: 100px;
-    height: 40px;
-    background-color: deepskyblue;
-    /*    font-family: 'Quicksand',
-    sans-serif;*/
-    border-radius: 20px;
+    width: 10rem;
+    height: 4rem;
+    line-height: 3.8rem;
+    border-radius: 2rem;
+    background-color: #A6676B;
     text-align: center;
-    line-height: 38px;
     text-decoration: none;
     color: white;
+    transition: 1s;
+}
 
+.button a:hover {
+    background-color: #01cadb;
 
 }
 
-
 footer {
-    background-color: #2c2b2b;
-    text-align: center;
-    margin-top: 1rem;
     height: 6rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #2c2b2b;
 }
 
 footer a {
-    text-decoration: none;
-    color: antiquewhite;
     font-size: 1.6rem;
     line-height: 6rem;
+    text-decoration: none;
+    color: antiquewhite;
 }
 
 footer a:hover {
