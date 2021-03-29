@@ -161,18 +161,42 @@ nav ul li:last-child a:hover {
     color: #89dee5;
 }
 
+/*jeżeli planujemy ustawiać elementy za pomocą floatów to najlepiej jeśli będą one miały swojego dodatkowego rodzica, który będzie służył do ustawienia klasy clearfix i wyczyszczenia floatów */
+
+
+.blog {
+    margin: 30px 200px;
+}
 
 main {
-    width: 65%;
-    height: 300px;
+    width: 70%;
     float: left;
+    padding-right: 30px;
 
-    background-color: pink;
+    /*    background-color: pink;
+    */
+}
 
+article h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    ;
+}
+
+article img {
+    width: 300px;
+    float: left;
+    margin: 20px 20px 30px 0;
+}
+
+article p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 aside {
-    width: 25%;
+    width: 30%;
     height: 100px;
     float: left;
 
